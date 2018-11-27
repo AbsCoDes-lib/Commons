@@ -1,0 +1,32 @@
+//===--- IOException.cpp -------------------------------------------------------------------------------*- C++ -*-===//
+//
+// This source file is part of the Absolute Codes Design open source projects
+//
+// Copyright (c) 2016 - 2019-2019 Absolute Codes Design and the project authors
+// Licensed under Apache License v2.0 with Runtime Library Exception
+//
+// See https://raw.githubusercontent.com/AbsCoDes/AbsCoDes.github.io/master/Licence.txt for license information
+//
+//===-------------------------------------------------------------------------------------------------------------===//
+
+
+#include "Commons/Exceptions/IOException.h"
+
+
+namespace AbsCoDes {
+namespace Commons {
+  namespace Exceptions {
+
+
+    IOException::IOException(const std::string& message, LONG errorCode)
+      : ErrorCodeException(message, errorCode) {}
+
+    IOException::IOException(const char* message, LONG errorCode)
+      : ErrorCodeException(message, errorCode) {}
+
+    IOException::IOException(LONG errorCode)
+      : ErrorCodeException(errorCode) {}
+
+  } // namespace Exceptions
+} // namespace Commons
+} // namespace AbsCoDes

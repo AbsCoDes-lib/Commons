@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{0248f662-7892-4980-b55f-5c6fe44a55b2}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{915125b9-c110-41e2-96ca-3ad09de76773}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\Commons">
+      <UniqueIdentifier>{7258ba95-b309-4b6f-8b5a-f7eb65ba0691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Commons">
+      <UniqueIdentifier>{82c0cf99-3820-4df0-9fd8-790ace6f2d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Commons\Exceptions">
+      <UniqueIdentifier>{ea29e7a7-73b6-4df0-bc1e-88ebe212a675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Commons\Exceptions">
+      <UniqueIdentifier>{67208dd6-4c47-4873-861d-972c860d558f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Commons\String">
+      <UniqueIdentifier>{48b75e2c-f21c-4db8-ab5f-b8e6af249739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Commons\Delegate">
+      <UniqueIdentifier>{d9a1284b-b985-4878-b8d4-8fc6b4d177d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Commons\String">
+      <UniqueIdentifier>{4f71ebcf-8f41-4a00-84c5-7d3c2faf70b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Commons\Utf8Convert">
+      <UniqueIdentifier>{c2c959e9-beb5-4145-91f6-5f8e41031df7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Commons\Utf8Convert">
+      <UniqueIdentifier>{b24367d3-0699-4024-b81f-a1102bbbe58a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Commons\Number">
+      <UniqueIdentifier>{713668c0-d181-4163-a584-c96934618e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Commons\Number">
+      <UniqueIdentifier>{5febbbfe-a07b-4f39-9cdb-024a6707c6e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Commons\Exceptions\ErrorCodeException.h">
+      <Filter>include\Commons\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Commons\Exceptions\IOException.h">
+      <Filter>include\Commons\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Commons\CommonsApi.h">
+      <Filter>include\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Commons\Utf8Convert.h">
+      <Filter>include\Commons\Utf8Convert</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Commons\StringUtils.h">
+      <Filter>include\Commons\String</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Commons\Utf8Exception.h">
+      <Filter>include\Commons\Utf8Convert</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Commons\NumberUtils.h">
+      <Filter>include\Commons\Number</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.md" />
+    <None Include=".gitignore" />
+    <None Include=".clang-format" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Licence.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Commons\Exceptions\ErrorCodeException.cpp">
+      <Filter>src\Commons\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Commons\Exceptions\IOException.cpp">
+      <Filter>src\Commons\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Commons\StringUtils.cpp">
+      <Filter>src\Commons\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Commons\Utf8Convert.cpp">
+      <Filter>src\Commons\Utf8Convert</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Commons\Utf8Exception.cpp">
+      <Filter>src\Commons\Utf8Convert</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Commons\NumberUtils.cpp">
+      <Filter>src\Commons\Number</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
