@@ -13,9 +13,9 @@
 #include "Commons/Exceptions/ErrorCodeException.h"
 
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace Exceptions {
+namespace abscodes {
+namespace commons {
+  namespace exceptions {
 
 
     ErrorCodeException::ErrorCodeException(const std::string& message, LONG errorCode)
@@ -82,6 +82,6 @@ namespace Commons {
       // return std::string();
     }
 
-  } // namespace Exceptions
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace exceptions
+} // namespace commons
+} // namespace abscodes

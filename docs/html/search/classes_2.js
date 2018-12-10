@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utf8conversionexception',['Utf8ConversionException',['../class_abs_co_des_1_1_commons_1_1_utf8_convert_1_1_utf8_conversion_exception.html',1,'AbsCoDes::Commons::Utf8Convert']]]
+  ['utf8conversionexception',['Utf8ConversionException',['../classabscodes_1_1commons_1_1utf8convert_1_1_utf8_conversion_exception.html',1,'abscodes::commons::utf8convert']]]
 ];

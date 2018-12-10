@@ -10,8 +10,8 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef Commons_Utf8Exception_INCLUDED
-#define Commons_Utf8Exception_INCLUDED
+#ifndef COMMONS_UTF8_EXCEPTION_INCLUDED
+#define COMMONS_UTF8_EXCEPTION_INCLUDED
 
 
 #include "Commons/CommonsApi.h"
@@ -19,12 +19,12 @@
 #pragma warning(push)
 #pragma warning(disable : 4275)
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace Utf8Convert {
+namespace abscodes {
+namespace commons {
+  namespace utf8convert {
 
     ///
-    class Commons_API Utf8ConversionException : public std::runtime_error {
+    class COMMONS_API Utf8ConversionException : public std::runtime_error {
 
      public:
       ///
@@ -66,9 +66,9 @@ namespace Commons {
     };
 
   } // namespace Utf8Exception
-} // namespace Commons
-} // namespace AbsCoDes
+} // namespace commons
+} // namespace abscodes
 
 #pragma warning(pop)
 
-#endif // Commons_Utf8Exception_INCLUDED
+#endif // COMMONS_UTF8_EXCEPTION_INCLUDED

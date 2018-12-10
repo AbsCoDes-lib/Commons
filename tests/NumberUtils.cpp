@@ -5,7 +5,7 @@
 #include "Commons\NumberUtils.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace AbsCoDes::Commons;
+using namespace abscodes::commons;
 
 namespace CommonsTests
 {		
@@ -15,38 +15,38 @@ namespace CommonsTests
 
 		TEST_METHOD(toString)
 		{
-			Assert::IsTrue(NumberUtils::toString(1) == "1");
-			Assert::IsTrue(NumberUtils::toString((int)1) == "1");
-			Assert::IsTrue(NumberUtils::toString((unsigned int)1) == "1");
-			Assert::IsTrue(NumberUtils::toString((long)1) == "1");
-			Assert::IsTrue(NumberUtils::toString((unsigned long)1) == "1");
+			Assert::IsTrue(number::toString(1) == "1");
+			Assert::IsTrue(number::toString((int)1) == "1");
+			Assert::IsTrue(number::toString((unsigned int)1) == "1");
+			Assert::IsTrue(number::toString((long)1) == "1");
+			Assert::IsTrue(number::toString((unsigned long)1) == "1");
 			
-			Assert::IsTrue(NumberUtils::toString(-1) == "-1");
-			Assert::IsTrue(NumberUtils::toString((int)-1) == "-1");
-			Assert::IsTrue(NumberUtils::toString((long)-1) == "-1");
+			Assert::IsTrue(number::toString(-1) == "-1");
+			Assert::IsTrue(number::toString((int)-1) == "-1");
+			Assert::IsTrue(number::toString((long)-1) == "-1");
 			
-			Assert::IsTrue(NumberUtils::toString(2147483648) == "2147483648");
-			Assert::IsTrue(NumberUtils::toString((unsigned long)2147483648) == "2147483648");
+			Assert::IsTrue(number::toString(2147483648) == "2147483648");
+			Assert::IsTrue(number::toString((unsigned long)2147483648) == "2147483648");
 			
-			Assert::IsTrue(NumberUtils::toString(1.2) == "1.2");
-			Assert::IsTrue(NumberUtils::toString((float)1.2) == "1.2");
-			Assert::IsTrue(NumberUtils::toString((double)1.2) == "1.2");
+			Assert::IsTrue(number::toString(1.2) == "1.2");
+			Assert::IsTrue(number::toString((float)1.2) == "1.2");
+			Assert::IsTrue(number::toString((double)1.2) == "1.2");
 		}
 
 		TEST_METHOD(toNumber)
 		{
-			Assert::IsTrue(NumberUtils::toNumber<int>("1") == 1);
-			Assert::IsTrue(NumberUtils::toNumber<unsigned int>("1") == 1);
-			Assert::IsTrue(NumberUtils::toNumber<long>("1") == 1);
-			Assert::IsTrue(NumberUtils::toNumber<unsigned long>("1") == 1);
+			Assert::IsTrue(number::toNumber<int>("1") == 1);
+			Assert::IsTrue(number::toNumber<unsigned int>("1") == 1);
+			Assert::IsTrue(number::toNumber<long>("1") == 1);
+			Assert::IsTrue(number::toNumber<unsigned long>("1") == 1);
 			
-			Assert::IsTrue(NumberUtils::toNumber<int>("-1") == -1);
-			Assert::IsTrue(NumberUtils::toNumber<long>("-1") == -1);
+			Assert::IsTrue(number::toNumber<int>("-1") == -1);
+			Assert::IsTrue(number::toNumber<long>("-1") == -1);
 			
-			Assert::IsTrue(NumberUtils::toNumber<unsigned long>("2147483648") == 2147483648);
+			Assert::IsTrue(number::toNumber<unsigned long>("2147483648") == 2147483648);
 			
-			Assert::IsTrue(NumberUtils::toNumber<float>("1.2") == (float)1.2);
-			Assert::IsTrue(NumberUtils::toNumber<double>("1.2") == 1.2);
+			Assert::IsTrue(number::toNumber<float>("1.2") == (float)1.2);
+			Assert::IsTrue(number::toNumber<double>("1.2") == 1.2);
 		}
 
 	};

@@ -46,7 +46,8 @@
   <ItemGroup>
     <None Include=".clang-format" />
     <None Include=".gitignore" />
-    <None Include="Readme.md" />
+    <None Include="LICENCE" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Commons\Exceptions\ErrorCodeException.cpp" />
@@ -55,9 +56,6 @@
     <ClCompile Include="src\Commons\StringUtils.cpp" />
     <ClCompile Include="src\Commons\Utf8Convert.cpp" />
     <ClCompile Include="src\Commons\Utf8Exception.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Licence.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A8E4053E-C063-4C04-B2C7-15C07987C3F3}</ProjectGuid>

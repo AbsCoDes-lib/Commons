@@ -46,9 +46,9 @@
 #include "Commons/Utf8Exception.h"
 
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace Utf8Convert {
+namespace abscodes {
+namespace commons {
+  namespace utf8convert {
 
     Utf8ConversionException::Utf8ConversionException(const char* const message, const uint32_t errorCode, const ConversionType type)
       : std::runtime_error(message)
@@ -72,5 +72,5 @@ namespace Commons {
     }
 
   } // namespace Utf8Exception
-} // namespace Commons
-} // namespace AbsCoDes
+} // namespace commons
+} // namespace abscodes

@@ -42,8 +42,8 @@
 //
 //===-------------------------------------------------------------------------------------------------------------===//
 
-#ifndef Commons_Utf8Convert_INCLUDED
-#define Commons_Utf8Convert_INCLUDED
+#ifndef COMMONS_UTF8_CONVERT_INCLUDED
+#define COMMONS_UTF8_CONVERT_INCLUDED
 
 
 #include <Windows.h> // Win32 Platform SDK main header
@@ -56,9 +56,9 @@
 
 #include "Commons/CommonsApi.h"
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace Utf8Convert {
+namespace abscodes {
+namespace commons {
+  namespace utf8convert {
 
 
     //------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ namespace Commons {
     /// Throws Utf8ConversionException on conversion errors
     /// (e.g. invalid UTF-8 sequence found in input string).
     //------------------------------------------------------------------------------
-    Commons_API std::wstring Utf8ToUtf16(const std::string& utf8);
+    COMMONS_API std::wstring Utf8ToUtf16(const std::string& utf8);
 
 
     //------------------------------------------------------------------------------
@@ -74,7 +74,7 @@ namespace Commons {
     /// Throws Utf8ConversionException on conversion errors
     /// (e.g. invalid UTF-8 sequence found in input string).
     //------------------------------------------------------------------------------
-    Commons_API std::vector<std::wstring> Utf8ToUtf16(const std::vector<std::string>& utf8vector);
+    COMMONS_API std::vector<std::wstring> Utf8ToUtf16(const std::vector<std::string>& utf8vector);
 
 
     //------------------------------------------------------------------------------
@@ -82,7 +82,7 @@ namespace Commons {
     /// Throws Utf8ConversionException on conversion errors
     /// (e.g. invalid UTF-16 sequence found in input string).
     //------------------------------------------------------------------------------
-    Commons_API std::string Utf16ToUtf8(const std::wstring& utf16);
+    COMMONS_API std::string Utf16ToUtf8(const std::wstring& utf16);
 
 
     //------------------------------------------------------------------------------
@@ -90,11 +90,11 @@ namespace Commons {
     /// Throws Utf8ConversionException on conversion errors
     /// (e.g. invalid UTF-16 sequence found in input string).
     //------------------------------------------------------------------------------
-    Commons_API std::vector<std::string> Utf16ToUtf8(const std::vector<std::wstring>& utf16vector);
+    COMMONS_API std::vector<std::string> Utf16ToUtf8(const std::vector<std::wstring>& utf16vector);
 
-  } // namespace Utf8Convert
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace utf8convert
+} // namespace commons
+} // namespace abscodes
 
 
-#endif // Commons_Utf8Convert_INCLUDED
+#endif // COMMONS_UTF8_CONVERT_INCLUDED

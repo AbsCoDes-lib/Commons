@@ -13,12 +13,12 @@
 #include "Commons/NumberUtils.h"
 
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace NumberUtils {
+namespace abscodes {
+namespace commons {
+  namespace number {
 
 
 
-  } // namespace NumberUtils
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace number
+} // namespace commons
+} // namespace abscodes

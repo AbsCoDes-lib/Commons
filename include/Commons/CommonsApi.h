@@ -10,8 +10,8 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef Commons_INCLUDED
-#define Commons_INCLUDED
+#ifndef COMMONS_INCLUDED
+#define COMMONS_INCLUDED
 
 #if _MSC_VER > 1000
 #  pragma once
@@ -54,20 +54,20 @@
 // from a DLL simpler. All files within this DLL are compiled with the COMMONS_EXPORTS
 // symbol defined on the command line. this symbol should not be defined on any project
 // that uses this DLL. This way any other project whose source files include this file see
-// Commons_API functions as being imported from a DLL, wheras this DLL sees symbols
+// COMMONS_API functions as being imported from a DLL, wheras this DLL sees symbols
 // defined with this macro as being exported.
 //
 #if defined(_WIN32) && defined(COMMONS_DLL)
 #  ifdef COMMONS_EXPORTS
-#    define Commons_API __declspec(dllexport)
+#    define COMMONS_API __declspec(dllexport)
 #  else
-#    define Commons_API __declspec(dllimport)
+#    define COMMONS_API __declspec(dllimport)
 #  endif
 #endif
 
 
-#if !defined(Commons_API)
-#  define Commons_API
+#if !defined(COMMONS_API)
+#  define COMMONS_API
 #endif
 
 
@@ -125,4 +125,4 @@
 #include <string>
 
 
-#endif // Commons_INCLUDED
+#endif // COMMONS_INCLUDED

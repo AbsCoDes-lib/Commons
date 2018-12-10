@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['geterrorstring',['GetErrorString',['../class_abs_co_des_1_1_commons_1_1_exceptions_1_1_error_code_exception.html#a3593e6b563843fac39b3adb3a44f104e',1,'AbsCoDes::Commons::Exceptions::ErrorCodeException::GetErrorString()'],['../class_abs_co_des_1_1_commons_1_1_exceptions_1_1_error_code_exception.html#a1210dc6f90dc224009f59421afa84d3b',1,'AbsCoDes::Commons::Exceptions::ErrorCodeException::GetErrorString(LONG errorCode)']]]
+  ['geterrorstring',['GetErrorString',['../classabscodes_1_1commons_1_1exceptions_1_1_error_code_exception.html#a6e5c686cba836c5ad3fd4ef68adbdc91',1,'abscodes::commons::exceptions::ErrorCodeException::GetErrorString()'],['../classabscodes_1_1commons_1_1exceptions_1_1_error_code_exception.html#ae854e969e0ab65e50c40711cf44dbba7',1,'abscodes::commons::exceptions::ErrorCodeException::GetErrorString(LONG errorCode)']]]
 ];

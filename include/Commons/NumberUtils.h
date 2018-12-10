@@ -10,8 +10,8 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef Commons_NumberUtils_INCLUDED
-#define Commons_NumberUtils_INCLUDED
+#ifndef COMMONS_NUMBER_UTILS_INCLUDED
+#define COMMONS_NUMBER_UTILS_INCLUDED
 
 
 #include "Commons/CommonsApi.h"
@@ -19,9 +19,9 @@
 #include <sstream>
 #include <string>
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace NumberUtils {
+namespace abscodes {
+namespace commons {
+  namespace number {
 
     ///
     template<typename T>
@@ -31,26 +31,26 @@ namespace Commons {
     template<typename T>
     T toNumber(const std::string& number);
 
-  } // namespace NumberUtils
+  } // namespace number
 
 
   template<typename T>
-  std::string NumberUtils::toString(const T& number) {
+  std::string number::toString(const T& number) {
     std::ostringstream oss;
     oss << number;
     return oss.str();
   }
 
   template<typename T>
-  T NumberUtils::toNumber(const std::string& number) {
+  T number::toNumber(const std::string& number) {
     T                  n = 0;
     std::istringstream iss(number);
     iss >> n;
     return n;
   }
 
-} // namespace Commons
-} // namespace AbsCoDes
+} // namespace commons
+} // namespace abscodes
 
 
-#endif // Commons_NumberUtils_INCLUDED
+#endif // COMMONS_NUMBER_UTILS_INCLUDED

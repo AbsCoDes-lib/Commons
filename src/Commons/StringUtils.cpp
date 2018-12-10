@@ -18,9 +18,9 @@
 #include "Commons/StringUtils.h"
 
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace StringUtils {
+namespace abscodes {
+namespace commons {
+  namespace string {
 
     // Tests whether the string starts with the given prefix.
     bool startsWith(__in const std::string& string, __in const std::string& prefix) {
@@ -184,6 +184,6 @@ namespace Commons {
       }
     }
 
-  } // namespace StringUtils
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace string
+} // namespace commons
+} // namespace abscodes

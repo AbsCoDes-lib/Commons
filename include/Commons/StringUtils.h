@@ -10,8 +10,8 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef Commons_StringUtils_INCLUDED
-#define Commons_StringUtils_INCLUDED
+#ifndef COMMONS_STRING_UTILS_INCLUDED
+#define COMMONS_STRING_UTILS_INCLUDED
 
 
 #include <string>
@@ -20,71 +20,71 @@
 #include "Commons/CommonsApi.h"
 
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace StringUtils {
+namespace abscodes {
+namespace commons {
+  namespace string {
 
     /// Tests whether the string starts with the given prefix.
-    Commons_API bool startsWith(__in const std::string& string, __in const std::string& prefix);
+    COMMONS_API bool startsWith(__in const std::string& string, __in const std::string& prefix);
     /// Tests whether the string ends with the given suffix.
-    Commons_API bool endsWith(__in const std::string& string, __in const std::string& suffix);
+    COMMONS_API bool endsWith(__in const std::string& string, __in const std::string& suffix);
 
     /// Converts a string to an lowercase string.
-    Commons_API std::string toLower(__in std::string& string);
+    COMMONS_API std::string toLower(__in std::string& string);
     /// Converts a string to an uppercase string.
-    Commons_API std::string toUpper(__in std::string& string);
+    COMMONS_API std::string toUpper(__in std::string& string);
 
     /// Trim from start
-    Commons_API std::string ltrim(__in std::string& string);
-    Commons_API std::string ltrim(__in std::string& string, int ch);
+    COMMONS_API std::string ltrim(__in std::string& string);
+    COMMONS_API std::string ltrim(__in std::string& string, int ch);
     /// Trim from end
-    Commons_API std::string rtrim(__in std::string& string);
-    Commons_API std::string rtrim(__in std::string& string, int ch);
+    COMMONS_API std::string rtrim(__in std::string& string);
+    COMMONS_API std::string rtrim(__in std::string& string, int ch);
     /// Trim from both ends
-    Commons_API std::string trim(__in std::string& string);
-    Commons_API std::string trim(__in std::string& string, int ch);
+    COMMONS_API std::string trim(__in std::string& string);
+    COMMONS_API std::string trim(__in std::string& string, int ch);
 
     /// Join a vector of string by a string delimiter.
-    Commons_API std::string join(__in std::vector<std::string>& elements, __in const std::string& delimiter);
+    COMMONS_API std::string join(__in std::vector<std::string>& elements, __in const std::string& delimiter);
 
     /// Split a string on a single delimiter character (delimiter)
-    Commons_API std::vector<std::string>& split(__in const std::string& toSplit, __in char delimiter, __inout std::vector<std::string>& elements);
-    Commons_API std::vector<std::string> split(__in const std::string& toSplit, __in char delimiter);
+    COMMONS_API std::vector<std::string>& split(__in const std::string& toSplit, __in char delimiter, __inout std::vector<std::string>& elements);
+    COMMONS_API std::vector<std::string> split(__in const std::string& toSplit, __in char delimiter);
 
     /// Split a string on any character found in the string of delimiters (delimiters)
-    Commons_API std::vector<std::string>& split(__in const std::string& toSplit, __in const std::string& delimiters,
+    COMMONS_API std::vector<std::string>& split(__in const std::string& toSplit, __in const std::string& delimiters,
                                                 __inout std::vector<std::string>& elements);
-    Commons_API std::vector<std::string> split(__in const std::string& toSplit, __in const std::string& delimiters);
+    COMMONS_API std::vector<std::string> split(__in const std::string& toSplit, __in const std::string& delimiters);
 
     /// Replace a string by an other
-    Commons_API std::string replaceAll(__in std::string& string, __in const std::string& sFind, __in const std::string& sReplace);
+    COMMONS_API std::string replaceAll(__in std::string& string, __in const std::string& sFind, __in const std::string& sReplace);
 
 
     namespace InPlace {
 
       /// Converts a string to an lowercase string.
-      Commons_API void toLower(__in std::string& string);
+      COMMONS_API void toLower(__in std::string& string);
       /// Converts a string to an uppercase string.
-      Commons_API void toUpper(__in std::string& string);
+      COMMONS_API void toUpper(__in std::string& string);
 
       /// Trim from start
-      Commons_API void ltrim(__in std::string& string);
-      Commons_API void ltrim(__in std::string& string, int ch);
+      COMMONS_API void ltrim(__in std::string& string);
+      COMMONS_API void ltrim(__in std::string& string, int ch);
       /// Trim from end
-      Commons_API void rtrim(__in std::string& string);
-      Commons_API void rtrim(__in std::string& string, int ch);
+      COMMONS_API void rtrim(__in std::string& string);
+      COMMONS_API void rtrim(__in std::string& string, int ch);
       /// Trim from both ends
-      Commons_API void trim(__in std::string& string);
-      Commons_API void trim(__in std::string& string, int ch);
+      COMMONS_API void trim(__in std::string& string);
+      COMMONS_API void trim(__in std::string& string, int ch);
 
       /// Replace a string by an other
-      Commons_API void replaceAll(__in std::string& string, __in const std::string& sFind, __in const std::string& sReplace);
+      COMMONS_API void replaceAll(__in std::string& string, __in const std::string& sFind, __in const std::string& sReplace);
 
     } // namespace InPlace
 
-  } // namespace StringUtils
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace string
+} // namespace commons
+} // namespace abscodes
 
 
-#endif // Commons_StringUtils_INCLUDED
+#endif // COMMONS_STRING_UTILS_INCLUDED

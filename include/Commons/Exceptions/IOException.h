@@ -10,21 +10,21 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef IOException_INCLUDED
-#define IOException_INCLUDED
+#ifndef IO_EXCEPTION_INCLUDED
+#define IO_EXCEPTION_INCLUDED
 
 
 #include "Commons/CommonsApi.h"
 #include "Commons/Exceptions/ErrorCodeException.h"
 
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace Exceptions {
+namespace abscodes {
+namespace commons {
+  namespace exceptions {
 
 
     ///
-    class Commons_API IOException : public ErrorCodeException {
+    class COMMONS_API IOException : public ErrorCodeException {
      public:
       /// Construct a IOException.
       explicit IOException(const std::string& message, LONG errorCode);
@@ -37,9 +37,9 @@ namespace Commons {
     };
 
 
-  } // namespace Exceptions
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace exceptions
+} // namespace commons
+} // namespace abscodes
 
 
-#endif // IOException_INCLUDED
+#endif // IO_EXCEPTION_INCLUDED

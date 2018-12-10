@@ -48,9 +48,9 @@
 #include "Commons/Utf8Exception.h"
 
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace Utf8Convert {
+namespace abscodes {
+namespace commons {
+  namespace utf8convert {
 
     // Convert form UTF-8 to UTF-16.
     // Throws Utf8ConversionException on conversion errors
@@ -222,6 +222,6 @@ namespace Commons {
 		return utf8vector;
 	}
 
-  } // namespace Utf8Convert
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace utf8convert
+} // namespace commons
+} // namespace abscodes

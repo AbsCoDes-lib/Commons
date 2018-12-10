@@ -10,8 +10,8 @@
 //===-------------------------------------------------------------------------------------------------------------===//
 
 
-#ifndef ErrorCodeException_INCLUDED
-#define ErrorCodeException_INCLUDED
+#ifndef ERROR_CODE_EXCEPTION_INCLUDED
+#define ERROR_CODE_EXCEPTION_INCLUDED
 
 #include <stdexcept>
 
@@ -21,13 +21,13 @@
 #pragma warning(push)
 #pragma warning(disable : 4275)
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace Exceptions {
+namespace abscodes {
+namespace commons {
+  namespace exceptions {
 
 
     ///
-    class Commons_API ErrorCodeException : public std::runtime_error {
+    class COMMONS_API ErrorCodeException : public std::runtime_error {
      public:
       /// Construct a ErrorCodeException.
       explicit ErrorCodeException(const std::string& message, LONG errorCode);
@@ -59,10 +59,10 @@ namespace Commons {
     };
 
 
-  } // namespace Exceptions
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace exceptions
+} // namespace commons
+} // namespace abscodes
 
 #pragma warning(pop)
 
-#endif // ErrorCodeException_INCLUDED
+#endif // ERROR_CODE_EXCEPTION_INCLUDED

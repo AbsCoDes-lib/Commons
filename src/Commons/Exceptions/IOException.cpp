@@ -13,9 +13,9 @@
 #include "Commons/Exceptions/IOException.h"
 
 
-namespace AbsCoDes {
-namespace Commons {
-  namespace Exceptions {
+namespace abscodes {
+namespace commons {
+  namespace exceptions {
 
 
     IOException::IOException(const std::string& message, LONG errorCode)
@@ -27,6 +27,6 @@ namespace Commons {
     IOException::IOException(LONG errorCode)
       : ErrorCodeException(errorCode) {}
 
-  } // namespace Exceptions
-} // namespace Commons
-} // namespace AbsCoDes
+  } // namespace exceptions
+} // namespace commons
+} // namespace abscodes
