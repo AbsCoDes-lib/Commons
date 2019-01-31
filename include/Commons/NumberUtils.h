@@ -31,20 +31,32 @@ namespace commons {
     template<typename T>
     T toNumber(const std::string& number);
 
+    ///
+    template<typename T>
+    T toNumber(const std::wstring& number);
+
   } // namespace number
 
 
   template<typename T>
   std::string number::toString(const T& number) {
-    std::ostringstream oss;
-    oss << number;
-    return oss.str();
+     std::ostringstream oss;
+     oss << number;
+     return oss.str();
   }
 
   template<typename T>
   T number::toNumber(const std::string& number) {
     T                  n = 0;
     std::istringstream iss(number);
+    iss >> n;
+    return n;
+  }
+
+  template<typename T>
+  T number::toNumber(const std::wstring& number) {
+    T                   n = 0;
+    std::wistringstream iss(number);
     iss >> n;
     return n;
   }
